@@ -201,10 +201,13 @@
             };
         }
 
-        const sortByFirstName = sortObjListByProp('firstName');
+      const sortByFirstName = sortObjListByProp('firstName');
 
-        const sortByLastName = (personList) => sortByFirstName(personList).reverse();
+      const sortByLastName = sortObjListByProp('lastName');
 
+           const sortDescendingByLastName = function(personList) {
+             return sortByLastName(personList).reverse();
+          };
 
         /*==================================================
 
