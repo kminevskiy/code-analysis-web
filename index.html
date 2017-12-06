@@ -128,13 +128,13 @@
             return person.lastName;
         }
 
-        const getFirstName = (person) => {
+        function getFirstName(person) {
             return person.firstName;
         };
 
         // headshot URLs are scheme relative //
         // prepend http: to prevent invalid schemes like file:// or uri://
-        const getImageUrl = (person) => {
+        function getImageUrl(person) {
             return `http:${person.headshot.url}`;
         };
 
