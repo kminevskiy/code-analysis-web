@@ -164,7 +164,7 @@
          * searching for.
          */
         function filterByName(searchForName, personList) {
-            return personList.filter((person) => {
+            return personList.filter(function(person) {
                 return person.firstName === searchForName || person.lastName === searchForName;
             });
         }
